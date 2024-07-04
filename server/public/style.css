@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;;padding: 0;box-sizing: border-box; scroll-behavior: smooth;
+}
+body{
+    font-family:'Raleway',sans-serif ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #000;
+    color: white;
+}
+.title{
+    margin: 50px 0px;
+    font-style: italic;
+}
+.main{
+    border:  5px solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.name{
+    display: flex;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 8px 7px;
+    background: white;
+    color: black;
+    gap: 10px;
+}
+.name>span{
+    color:  rgb(148, 145, 145);
+}
+.name-input{
+    font-size: 20px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    flex-grow: 1;
+    background: white;
+    color: black;
+}
+.message-container{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    /* overflow-y: scroll; */
+    overflow-x: hidden;
+}
+.message-left,
+.message-right{
+    list-style: none;
+    margin: 12px;
+    padding: 7px 8px;
+    max-width: 240px;
+    word-wrap: break-word;
+    font-size: 17px;
+}
+.message-left{
+    border-radius: 20px 20px 20px 0px;
+    align-self: flex-start;
+    box-shadow:  -2px 2px 4px #dcdcdc;
+}
+.message-right{
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+    background: rgb(61, 60, 60);
+    box-shadow:  2px 2px 4px #dcdcdc;
+}
+.message-left > p > span,
+.message-right > p > span {
+  display: block;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.feedback{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0px 16px 16px 16px;
+    color: rgb(148, 145, 145);
+    font-style: italic;
+}
+.message-form{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+}
+.message-input{
+    flex-grow: 1;
+    font-size: 18px;
+    height: 45px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background:  white;
+    padding: 0px 22px;
+}
+.v-divide{
+    height: 45px;
+    width: 2px;
+}
+.send-button{
+    border: none;
+    outline: none;
+    height: 45px;
+    padding: 0px 20px;
+    background: white;
+    color: #000;
+}
+.total-client{
+    padding: 1rem;
+    font-style: italic;
+}
